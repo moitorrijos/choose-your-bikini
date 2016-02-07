@@ -1,0 +1,6 @@
+# Created by https://www.gitignore.io/api/codekit
+
+### CodeKit ###
+# General CodeKit files to ignore
+config.codekit
+/min
