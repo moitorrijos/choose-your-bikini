@@ -1,0 +1,1 @@
+!function($){$(function(){Console.log("Let's Go!!!")})}(jQuery);

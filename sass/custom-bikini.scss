@@ -1,0 +1,79 @@
+body {
+	position: relative;
+	height: 100vh;
+}
+
+.order-box {
+	position: absolute;
+	background: transparentize(#21A23A, 0.7);
+	z-index: 100;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+
+	display: none;
+
+	.order-message {
+		background: white;
+		border: 4px solid #21A23A;
+		padding: 1em 3em;
+		text-align: center;
+		width: 44%;
+		margin: 0 auto;
+
+		opacity: 0;
+	}	
+}
+
+h3 {
+	margin: 20px 0;
+}
+
+.bikini-image {
+	margin: 24px 0;
+	width: 550px;
+	height: 550px;
+	background: #E8A0C6;
+	border-radius: 14px;
+}
+
+form {
+	label {
+		display: block;
+		width: 100%;
+		position: relative;
+		cursor: pointer;
+
+		input[type="radio"] {
+			visibility: hidden;
+			position: absolute;
+		}
+
+		svg {
+			width: 100%;
+		}
+
+		& > input:checked + img {
+			background: #F8EABF;
+			border-radius: 7px;
+			border: 4px solid #AF5800;
+		}
+	}
+
+	.button {
+		position: relative;
+	}
+
+	input.btn.btn-primary {
+		background: #275596;
+		display: block;
+		margin-top: 32px;
+		padding: 0.5em 2em;
+		font-size: 1.4em;
+	}
+
+	.loader {
+		position: absolute;
+		top: 8px; left: 40px;
+		display: none;
+	}
+}

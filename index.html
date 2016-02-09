@@ -3,33 +3,156 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Choose Your Bikini | Crush by AC</title>
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/custom-bikini.css">
 </head>
 <body>
+	<div class="order-box">
+		<div class="order-message">
+			<h2>¡Gracias!</h2>
+			<p>¡Tu pedido ha sido efectuado exitosamente!</p>
+		</div>
+	</div>
 	<div class="container">
-		<h1>Choose Your Bikini</h1>
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col-md-6">
 				<div class="bikini-image" id="bikini-image"></div>
+			</div>
+			<div class="col-md-6">
 				<form>
+					<h3>Escoge tú Bikini</h3>
 					<div class="row">
-						<input type="radio" name="bikini-type" class="bikini-1">
-						<input type="radio" name="bikini-type" class="bikini-2">
-						<input type="radio" name="bikini-type" class="bikini-3">
+						<div class="col-md-4">
+							<label>
+								<input type="radio" name="bikini-type" class="bikini-radio" value="bikini-type-1" checked="checked">
+								<img src="/images/bikini-type-1.svg" alt="Bikini Type 1">
+							</label>
+						</div>
+						<div class="col-md-4">
+							<label>
+								<input type="radio" name="bikini-type" class="bikini-radio" value="bikini-type-2">
+								<img src="/images/bikini-type-2.svg" alt="Bikini Type 2">
+							</label>
+						</div>
+						<div class="col-md-4">
+							<label>
+								<input type="radio" name="bikini-type" class="bikini-radio" value="bikini-type-3">
+								<img src="/images/bikini-type-3.svg" alt="Bikini Type 3">
+							</label>
+						</div>
 					</div>
-					<div class="row">
-						<input type="radio" name="color-pattern" class="color-patter1">
-						<input type="radio" name="color-pattern" class="color-patter2">
-						<input type="radio" name="color-pattern" class="color-patter3">
-						<input type="radio" name="color-pattern" class="color-patter4">
-						<input type="radio" name="color-pattern" class="color-patter5">
-						<input type="radio" name="color-pattern" class="color-patter6">
+					<div class="row color-pattern">
+						<h3>Color de Top</h3>
+						<div class="col-md-2">
+							<label>
+								<input type="radio" name="color-top" class="color-pattern1" value="color-1">
+								<svg version="1.1" id="color-pattern-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 75 75" enable-background="new 0 0 75 75" xml:space="preserve">
+									<rect fill="#FF6FFF" width="75" height="75"/>
+								</svg>
+							</label>
+						</div>
+						<div class="col-md-2">
+							<label>
+								<input type="radio" name="color-top" class="color-pattern2" value="color-2">
+								<svg version="1.1" id="color-pattern-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
+									<rect fill="#FF170F" width="400" height="400"/>
+								</svg>
+							</label>
+						</div>
+						<div class="col-md-2">
+							<label>
+								<input type="radio" name="color-top" class="color-pattern3" value="color-3">
+								<svg version="1.1" id="color-pattern-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
+									<rect fill="#FFEC0F" width="400" height="400"/>
+								</svg>
+							</label>
+						</div>
+						<div class="col-md-2">
+							<label>
+								<input type="radio" name="color-top" class="color-pattern-4" value="pattern-1">
+								<svg version="1.1" id="color-pattern-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
+									<rect fill="#41DFFF" width="400" height="400"/>
+								</svg>
+							</label>
+						</div>
+						<div class="col-md-2">
+							<label>
+								<input type="radio" name="color-top" class="color-pattern5" value="pattern-2">
+								<svg version="1.1" id="color-pattern-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
+									<rect fill="#35FF5C" width="400" height="400"/>
+								</svg>
+							</label>
+						</div>
+						<div class="col-md-2">
+							<label>
+								<input type="radio" name="color-top" class="color-pattern6" value="pattern-3">
+								<svg version="1.1" id="color-pattern-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
+									<rect fill="#051909" width="400" height="400"/>
+								</svg>
+							</label>
+						</div>
+					</div>
+					<div class="row color-pattern">
+						<h3>Color de Bottom</h3>
+						<div class="col-md-2">
+							<label>
+								<input type="radio" name="color-bottom" class="color-pattern1" value="color-1">
+								<svg version="1.1" id="color-pattern-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 75 75" enable-background="new 0 0 75 75" xml:space="preserve">
+									<rect fill="#FF6FFF" width="75" height="75"/>
+								</svg>
+							</label>
+						</div>
+						<div class="col-md-2">
+							<label>
+								<input type="radio" name="color-bottom" class="color-pattern2" value="color-2">
+								<svg version="1.1" id="color-pattern-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
+									<rect fill="#FF170F" width="400" height="400"/>
+								</svg>
+							</label>
+						</div>
+						<div class="col-md-2">
+							<label>
+								<input type="radio" name="color-bottom" class="color-pattern3" value="color-3">
+								<svg version="1.1" id="color-pattern-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
+									<rect fill="#FFEC0F" width="400" height="400"/>
+								</svg>
+							</label>
+						</div>
+						<div class="col-md-2">
+							<label>
+								<input type="radio" name="color-bottom" class="color-pattern-4" value="pattern-1">
+								<svg version="1.1" id="color-pattern-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
+									<rect fill="#41DFFF" width="400" height="400"/>
+								</svg>
+							</label>
+						</div>
+						<div class="col-md-2">
+							<label>
+								<input type="radio" name="color-bottom" class="color-pattern5" value="pattern-2">
+								<svg version="1.1" id="color-pattern-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
+									<rect fill="#35FF5C" width="400" height="400"/>
+								</svg>
+							</label>
+						</div>
+						<div class="col-md-2">
+							<label>
+								<input type="radio" name="color-bottom" class="color-pattern6" value="pattern-3">
+								<svg version="1.1" id="color-pattern-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
+									<rect fill="#051909" width="400" height="400"/>
+								</svg>
+							</label>
+						</div>
+					</div>
+					<div class="button">
+						<input class="btn btn-primary" type="submit" value="Pedir Bikini">
+						<img class="loader" src="/images/loader.gif" alt="loading">
 					</div>
 				</form>
 			</div>
-			<div class="col-md-4">
-				<h3>Sidebar</h3>
-			</div>
 		</div>
 	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
+	<script src="/js/custom-bikini.js"></script>
 </body>
 </html>
