@@ -37,12 +37,13 @@ h3 {
 }
 
 form {
+
 	label {
 		display: block;
 		width: 100%;
 		position: relative;
 		cursor: pointer;
-
+		
 		input[type="radio"] {
 			visibility: hidden;
 			position: absolute;
