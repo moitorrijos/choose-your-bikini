@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="/css/custom-bikini.css">
 </head>
 <body>
+	<!-- Este Div está escondido y sólo aparece cuando el formulario se envía -->
 	<div class="order-box">
 		<div class="order-message">
 			<h2>¡Gracias!</h2>
@@ -16,9 +17,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
+				<!-- En este div.bikini-image es donde se carga el svg. Lo hago utilizando jQuery.load en el js -->
 				<div class="bikini-image" id="bikini-image"></div>
 			</div>
 			<div class="col-md-6">
+				<!-- Aquí empieza el formulario puedes ponerle la acción que desees, o simplemente dejar que AJAX se encargue de enviar la data. Lo más importanta es cambiar el valor de los radios porque eso es lo que se pasa. -->
 				<form>
 					<h3>Escoge tú Bikini</h3>
 					<div class="row">
@@ -145,6 +148,7 @@
 					</div>
 					<div class="button">
 						<input class="btn btn-primary" type="submit" value="Pedir Bikini">
+						<!-- Esta es la animación del loader -->
 						<img class="loader" src="/images/loader.gif" alt="loading">
 					</div>
 				</form>
